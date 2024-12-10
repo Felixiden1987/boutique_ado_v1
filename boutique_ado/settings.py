@@ -22,10 +22,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = 'django-insecure-!_i3az1#y32n9_t5o3_cuf5#cga!9^@t*i))#v8p@8l-ziygk8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-felixiden19-boutiqueado-6wtso7mdgvt.ws.codeinstitute-ide.net', 'localhost', 'https://boutique-ado-v10-656441b1b98a.herokuapp.com/'
 ]
@@ -123,17 +123,21 @@ WSGI_APPLICATION = 'boutique_ado.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default' : dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+#if 'DATABASE_URL' in os.environ:
+
+
+DATABASES = {
+      'default': dj_database_url.parse('postgresql://neondb_owner:2rs4wiolMGpE@ep-winter-glitter-a28rawq0.eu-central-1.aws.neon.tech/stole_clamp_poem_858229')
+ }
+
+
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
 
 
 # Password validation

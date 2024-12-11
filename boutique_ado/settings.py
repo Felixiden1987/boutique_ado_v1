@@ -17,7 +17,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -25,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!_i3az1#y32n9_t5o3_cuf5#cga!9^@t*i))#v8p@8l-ziygk8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'https://boutique-ado-v10-656441b1b98a.herokuapp.com/'
+ALLOWED_HOSTS = ['8000-felixiden19-boutiqueado-6wtso7mdgvt.ws.codeinstitute-ide.net', 'localhost', 'https://boutique-ado-v10-656441b1b98a.herokuapp.com/'
 ]
 
 AUTHENTICATION_BACKENDS = [

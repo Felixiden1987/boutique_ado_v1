@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-!_i3az1#y32n9_t5o3_cuf5#cga!9^@t*i))#v8p@8l-ziygk8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-felixiden19-boutiqueado-6wtso7mdgvt.ws.codeinstitute-ide.net', 'localhost', 'https://boutique-ado-v10-656441b1b98a.herokuapp.com/'
+ALLOWED_HOSTS = ['8000-felixiden19-boutiqueado-6wtso7mdgvt.ws.codeinstitute-ide.net', 'boutique-ado-v10-656441b1b98a.herokuapp.com', 'https://boutique-ado-v10-656441b1b98a.herokuapp.com/'
 ]
 
 AUTHENTICATION_BACKENDS = [
